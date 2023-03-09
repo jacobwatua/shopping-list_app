@@ -1,0 +1,63 @@
+@import url("./bootstrap.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@0;1&family=Passion+One&family=Playfair+Display&family=Roboto&display=swap');
+
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+  font-family: 'Passion One', cursive;
+  font-family: 'Playfair Display', serif;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1{
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+
+h1 span:nth-child(1){
+  color: orangered;
+}
+h1 span:nth-child(2){
+  color: hsla(300, 50%, 0%, 50%);
+}
+#alert{
+  position: relative;
+  left: -100px;
+  background-color: red;
+  color: white;
+  width: 250px;
+  box-sizing: border-box;
+  position: absolute;
+  margin-left: 50%;
+  margin-right: 50%;
+  z-index: 9;
+  display: none;
+  padding-left: 20px;
+  height: 30px;
+  border-radius: 3px;
+}
+
+#alert p::after{
+  content: "!!";
+}
+
+.count {
+  display: inline-block;
+  position: absolute;
+  margin-left: 50%;
+  margin-right: 50%;
+  width: 200px;
+  left: -100px;
+  top: 100px;
+}
+
+@media(max-width:1100px){
+  .input{
+    grid-auto-columns: 60% 1fr;
+  }
+}
